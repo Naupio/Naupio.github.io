@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="cn" class="sidebar-visible no-js light">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -31,6 +31,8 @@
 
         <!-- Custom theme stylesheets -->
 
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     </head>
     <body>
     <div id="body-container">
@@ -84,7 +86,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Chapter 1</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Home Page</a></li><li class="chapter-item expanded affix "><li class="part-title">Smart Contract 系列</li><li class="chapter-item expanded "><a href="smart_contract/solidity/index.html"><strong aria-hidden="true">1.</strong> Solidity 语言系列</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="smart_contract/solidity/chapter_1.html"><strong aria-hidden="true">1.1.</strong> chapter_1</a></li><li class="chapter-item "><a href="smart_contract/solidity/chapter_2.html"><strong aria-hidden="true">1.2.</strong> chapter_2</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Solidity 安全系列</div></li><li class="chapter-item expanded affix "><li class="part-title">BEAM 系列</li><li class="chapter-item expanded "><a href="beam/elixir/index.html"><strong aria-hidden="true">3.</strong> Elixir 语言</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="beam/elixir/chapter_1.html"><strong aria-hidden="true">3.1.</strong> chapter_1</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -145,7 +147,22 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="chapter-1"><a class="header" href="#chapter-1">Chapter 1</a></h1>
+                        <h3 id="home-page"><a class="header" href="#home-page">Home Page</a></h3>
+<ul>
+<li>这里是 Naupio 的个人技术分享集, 基本上都是个人对技术感悟和总结, 希望能帮到你.</li>
+<li>以前我会想用一些类似 Hexo 之类的 blog 框架生成各种各样炫酷的模版, 现在发现自己越来越喜欢简单朴素的方式.</li>
+<li>目前这个分享使用的是 mdbook 来生成的, 初衷是希望能朴素点, 专注于内容, 也更专注于技术.</li>
+</ul>
+<h3 id="naupio-info"><a class="header" href="#naupio-info">Naupio Info</a></h3>
+<ul>
+<li><a href="https://github.com/naupio">Nauoio Github: github.com/naupio</a></li>
+<li><a href="https://naupio.com">Naupio Blog</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="solidity"><a class="header" href="#solidity">Solidity</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="chapter_1"><a class="header" href="#chapter_1">chapter_1</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="chapter_2"><a class="header" href="#chapter_2">chapter_2</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="elixir"><a class="header" href="#elixir">Elixir</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="chapter_1-1"><a class="header" href="#chapter_1-1">chapter_1</a></h1>
 
                     </main>
 
@@ -184,7 +201,9 @@
 
         <script>
         window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
+            MathJax.Hub.Register.StartupHook('End', function() {
+                window.setTimeout(window.print, 100);
+            });
         });
         </script>
 
