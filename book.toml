@@ -1,6 +1,14 @@
 [book]
 authors = ["Naupio"]
-language = "en"
+language = "cn"
 multilingual = false
 src = "src"
 title = "Naupio 的个人技术分享"
+
+[output.html]
+cname = "naupio.com"
+mathjax-support = true
+
+[output.html.fold]
+enable = true    # whether or not to enable section folding
+level = 1
