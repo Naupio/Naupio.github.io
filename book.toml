@@ -1,0 +1,6 @@
+[book]
+authors = ["Naupio"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Naupio 的个人技术分享"
